@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const path = require('path')
 const sequelize = require('./config/connection')
 const session = require('express-session')
@@ -6,7 +7,9 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-
+const corsOptions = {
+    origin: 'http://localhost:3001'
+};
 const sess = {
     secret: 'Login Secret',
     cookie: {
@@ -23,6 +26,7 @@ const sess = {
 }
 
 app.use(session(sess));
+app.use(cors(corsOptions));
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
