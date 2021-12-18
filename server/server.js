@@ -31,7 +31,7 @@ app.use(cors(corsOptions));
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// app.use(require('./controllers'));
+app.use(require('./routes/index'));
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
