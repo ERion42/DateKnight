@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const cors = require('cors');
 const path = require('path')
 const sequelize = require('./config/connection')
@@ -11,7 +12,7 @@ const corsOptions = {
     origin: 'http://localhost:3001'
 };
 const sess = {
-    secret: 'Login Secret',
+    secret: process.env.COOKIE,
     cookie: {
         maxAge: 86400,
         httpOnly: true,
@@ -31,7 +32,7 @@ app.use(cors(corsOptions));
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use(require('./routes/index'));
+app.use(require('./routes'));
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
