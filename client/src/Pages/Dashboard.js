@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-const apiKey = process.env.API_KEY
+
 require('dotenv').config();
 
 const Dashboard = () => {

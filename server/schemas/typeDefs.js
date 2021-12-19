@@ -3,12 +3,11 @@ const { gql } = require('apollo-server-express');
 // Mongoose
 
 const typeDefs = gql`
-
+    scalar Date
     type User {
         _id: ID!
-        username: String!
         email: String!
-        password: String!
+        username: String!
     }
 
     type Auth {
@@ -23,7 +22,7 @@ const typeDefs = gql`
 
     type Mutation {
         login(email: String!, password: String!): Auth
-        addUser(username: String!, email: String!, password: String!): Auth
+        addUser(email: String!, username: String!, password: String!): Auth
     }
 `
 module.exports = typeDefs;
