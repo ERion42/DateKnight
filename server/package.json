@@ -20,6 +20,7 @@
     "express": "^4.17.2",
     "express-session": "^1.17.2",
     "graphql": "^15.8.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.2",
     "mysql2": "^2.3.3",
     "sequelize": "^6.12.0",
