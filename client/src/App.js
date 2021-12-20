@@ -6,6 +6,8 @@ import NavBar from './components/NavBar';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm'
 import Dashboard from './Pages/Dashboard';
+import SiteContainer from './components/siteContainer';
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -39,6 +41,7 @@ function App() {
         </div>
       </Router>
     </ApolloProvider>
+
   )
 }
 
