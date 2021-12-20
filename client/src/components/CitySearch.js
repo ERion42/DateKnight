@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
-import { Loader } from "@googlemaps/js-api-loader"
-const mapApi = process.env.MAP_API
 
+require('dotenv').config()
+const mapApi = process.env.MAPS_API
 
 const CitySearchForm = () => {
+
     const [userFormData, setUserFormData] = useState({ city: '' });
 
     const [validated] = useState(false);
+    const [showAlert, setShowAlert] = useState(false);
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setUserFormData({ ...userFormData, [name]: value });
@@ -23,7 +25,11 @@ const CitySearchForm = () => {
         }
 
         try {
-            const { data } = fetch()
+            const data = fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${userFormData.city}&key=${mapApi}`)
+                .then(res => res.json())
+                .then((json) => {
+
+                })
             console.log(data)
         } catch (error) {
             console.error(error)
@@ -34,6 +40,25 @@ const CitySearchForm = () => {
         })
 
     }
+    return (
+        <>
+            <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
+                <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant="danger">
+                    Invalid Search
+                </Alert>
+
+                <Form.Group>
+                    <Form.Label htmlFor="city">Search By City</Form.Label>
+                    <Form.Control type='text' placeholder="Atlanta, New York,..." name="city" onChange={handleInputChange} value={userFormData.city} required />
+                    <Form.Control.Feedback type="invalid">
+                      
+                    </Form.Control.Feedback>
+                </Form.Group>
+
+                <Button disabled={!(userFormData.city)} type="submit" variant="success">Submit!</Button>
+            </Form>
+        </>
+    )
 }
 
 export default CitySearchForm;
