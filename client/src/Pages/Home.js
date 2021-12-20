@@ -1,20 +1,13 @@
 
 import React from 'react';
+import Landing from './Landing';
 
 
 function Home() {
     return (
         <div className="App">
             <header className="App-header">
-                <p>
-                    You are not logged in
-                </p>
-                <a
-                    className="App-link"
-                    href={"/auth/login"}
-                >
-                    Login Here
-                </a>
+                <Landing />
             </header>
         </div>
     );

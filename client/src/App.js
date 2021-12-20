@@ -6,7 +6,9 @@ import NavBar from './components/NavBar';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm'
 import Dashboard from './Pages/Dashboard';
-import SiteContainer from './components/siteContainer';
+import Footer from './components/Footer';
+import Landing from './Pages/Landing';
+import SiteContainer from './Pages/siteContainer';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -37,11 +39,11 @@ function App() {
             <Route exact path='/dashboard' component={Dashboard} />
             <Route exact path="/signup" component={SignUpForm} />
             <Route exact path="/login" component={LoginForm} />
-            {/* SiteWindow? */}
+            <SiteContainer />
           </Switch>
 
 
-          {/* Footer? */}
+          <Footer />
         </div>
       </Router>
     </ApolloProvider>
