@@ -37,7 +37,11 @@ function App() {
             <Route exact path='/dashboard' component={Dashboard} />
             <Route exact path="/signup" component={SignUpForm} />
             <Route exact path="/login" component={LoginForm} />
+            {/* SiteWindow? */}
           </Switch>
+
+
+          {/* Footer? */}
         </div>
       </Router>
     </ApolloProvider>
