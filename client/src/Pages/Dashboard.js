@@ -20,6 +20,7 @@ const Dashboard = () => {
         <div>
             <CitySearchForm />
         </div>
+
     )
 }
 
