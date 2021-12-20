@@ -1,42 +1,30 @@
 
-import React, { useState } from 'react';
+import { getLocation } from 'graphql';
+import React, { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import CitySearchForm from '../components/CitySearch';
+import showError from '../utils/helpers'
+// import initMap from '../components/Map';
 
 require('dotenv').config();
+const mapApi = process.env.MAP_API
+// const geoCodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${city}&key=${mapApi}`
+
 
 const Dashboard = () => {
-    const [userFormData, setUserFormData] = useState({
-        userInput: ''
-    });
 
-    const handleInputChange = event => {
-        const { name, value } = event.target;
-        setUserFormData({ ...userFormData, [name]: value })
-    };
+
+
+
     return (
         <div>
-            <section>
-                <div className="row mt-1">
-                    <div className="col-lg-1"></div>
-                        <div className="col-lg-9">
-                            <Form>
-                                <Form.Group>
-                                    <Form.Label htmlFor='userInput'>Search</Form.Label>
-                                    <Form.Control type='text' placeholder="Search" name="userInput" onChange={handleInputChange} value={userFormData.userInput} required />
-                                </Form.Group>
-                            </Form>
-                            {/* <input type="text" class="form-control" placeholder="Atlanta, Chicago, Jacksonville" id="input-search" /> */}
-                        </div>
-                        <div className="col-lg-2 input-group-append">
-                            <Button disabled={!(userFormData.userInput)} type="submit" variant="success">Submit!</Button>
-                            <button className="btn btn-outline-secondary" id="btn-search" type="button">Search</button>
-                        </div>
-                    </div>
-                    <p id="location">Please allow your location to see events near you!</p>
-                <div id="map"></div>
-            </section>
+            <CitySearchForm />
+            <div id="map">
+                <showPosition />
+            </div>
         </div>
     )
 }
+
 
 export default Dashboard;
