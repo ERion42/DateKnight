@@ -59,9 +59,10 @@ const LoginForm = () => {
 
     return (
         <>
-            <Container fluid>
+            <Container>
                 <Row>
-                    <div className="col-md-9">
+
+                    <div className="col-md-9 m-0 p-5">
                         <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
                             <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant="danger">
                                 Something went wrong with your login.
@@ -86,9 +87,10 @@ const LoginForm = () => {
                             <Button disabled={!(userFormData.email && userFormData.password)} type="submit" variant="primary">Submit!</Button>
                         </Form>
                     </div>
-                    <div className='col-md-3'>
-                        <img src= {Wizard} className='mx-auto'/>
+                    <div className='col-md-3 m-0 p-5'>
+                        <img src= {Wizard} className='justify-content-center'/>
                     </div>
+
                 </Row>
             </Container>
         </>
