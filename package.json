@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ERion42/DateKnight#readme",
   "dependencies": {
-    "concurrently": "^6.5.1"
+    "concurrently": "^6.5.1",
+    "react-bootstrap-v5": "^1.4.0"
   }
 }
