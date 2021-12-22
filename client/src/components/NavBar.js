@@ -31,6 +31,11 @@ const NavBar = () => {
                         </li>
                         {/* <li className="nav-item"><a href="#" className="nav-link">FAQs</a></li>
                         <li className="nav-item"><a href="#" className="nav-link">About</a></li> */}
+                        <li className='nav-item'>
+                            <Link to="/profile" className='nav-link'>
+                                Profile
+                            </Link>
+                        </li>
                     </ul>
                 </header>
 
