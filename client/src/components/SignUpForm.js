@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Button, Alert, Container, Row, Col } from 'react-bootstrap';
+import { Form, Button, Alert, Container, Row } from 'react-bootstrap';
 
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
@@ -67,7 +67,7 @@ const SignUpForm = () => {
             <Container>
                 <Row>
                     <div className='col-md-3 m-0 p-5'>
-                        <img src= {Wizard} />
+                        <img src= {Wizard} alt='Knight Wizard' />
                     </div>
                     <div className='col-md-9 m-0 p-5'>
                         <Form noValidate validated={validated} onSubmit={handleFormSubmit}>

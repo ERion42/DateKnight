@@ -1,9 +1,7 @@
-
-
 // import React, { useState, useEffect, useRef } from 'react';
 import React from 'react';
 // import { Form, Button } from 'react-bootstrap';
-import CitySearchForm from '../components/CitySearch';
+// import CitySearchForm from '../components/CitySearch';
 // import showError from '../utils/helpers'
 // import { Loader } from "@googlemaps/js-api-loader"
 // import { withScriptjs, withGoogleMaps, GoogleMap, Marker, google } from 'react-google-maps'
@@ -19,7 +17,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <CitySearchForm />
+            <p>WIP</p>
         </div>
 
     )
