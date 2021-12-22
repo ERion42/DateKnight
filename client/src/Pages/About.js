@@ -12,6 +12,7 @@ const AboutPage = () => {
                 </header>
 
                 <div class="p-5 mb-4 bg-light rounded-3">
+                    
                 <div class="container-fluid py-5">
                     <h1 class="display-5 fw-bold">Get Ready For A Really Good Date</h1>
                     <p class="col-md-8 fs-4">Checkmate... Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? I was part of something special. Jaguar shark! So tell me - does it really exist? You really think you can fly that thing? So you two dig up, dig up dinosaurs?</p>
