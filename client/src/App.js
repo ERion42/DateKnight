@@ -2,16 +2,19 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+// Define links here
 import NavBar from './components/NavBar';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm'
-import Dashboard from './Pages/Dashboard';
 import Profile from './Pages/Profile';
 import Event from './components/eventDate';
+// import Dashboard from './Pages/Dashboard';
+import Dashboard2 from './Pages/Dashboard2';
 import Footer from './components/Footer';
-import Landing from './Pages/Landing';
+// import Landing from './Pages/Landing';
 import SiteContainer from './Pages/siteContainer';
 import history from './utils/history';
+import AboutPage from './Pages/About';
 
 const httpLink = createHttpLink({
   uri: '/graphql',

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Button, Alert, Row, Col, Container } from 'react-bootstrap';
+import { Form, Button, Alert, Row, Container } from 'react-bootstrap';
 
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
@@ -88,7 +88,7 @@ const LoginForm = () => {
                         </Form>
                     </div>
                     <div className='col-md-3 m-0 p-5'>
-                        <img src= {Wizard} className='justify-content-center'/>
+                        <img src= {Wizard} className='justify-content-center' alt='Knight Wizard' />
                     </div>
 
                 </Row>

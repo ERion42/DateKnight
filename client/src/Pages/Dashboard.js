@@ -1,5 +1,6 @@
 
 
+// import React, { useState, useEffect, useRef } from 'react';
 import React from 'react';
 // import { Form, Button } from 'react-bootstrap';
 import CitySearchForm from '../components/CitySearch';
@@ -7,7 +8,7 @@ import CitySearchForm from '../components/CitySearch';
 // import { Loader } from "@googlemaps/js-api-loader"
 // import { withScriptjs, withGoogleMaps, GoogleMap, Marker, google } from 'react-google-maps'
 // import { Wrapper, Status } from '@googlemaps/react-wrapper';
-// // import initMap from '../components/Map';
+// import initMap from '../components/Map';
 
 // require('dotenv').config();
 // const mapApi = process.env.MAPS_API
