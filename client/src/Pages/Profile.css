@@ -1,0 +1,46 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+}
+
+.Image-Row {
+    display: inline-flex;
+    text-align: center;
+    border-spacing: 50em;
+    float: left;
+}
+
+.image-spacing {
+    border-spacing: 50em;
+    border-radius: 5px;
+    margin-top: 0.50em;
+    margin-right: 1.50em;
+    margin-left: 0 !important;
+    float: left;
+}
+
+button {
+    border-spacing: 50em;
+    border-radius: 5px;
+    background-color: royalblue;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+
+
