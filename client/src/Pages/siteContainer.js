@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Auth from '../utils/auth';
 import HomePage from '../Pages/Home';
 import Dashboard from '../Pages/Dashboard';
+import About from '../Pages/About.js';
 
 export default function SiteContainer() {
     const [currentPage, setCurrentPage] = useState('LandingPage');
