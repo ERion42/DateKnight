@@ -1,16 +1,18 @@
 import React from "react";
+import { Row } from "react-bootstrap";
 
 const AboutPage = () => {
     return (
 
         <div class="container py-4">
+            <Row>
                 <header class="pb-3 mb-4 border-bottom">
                 <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
                     
                     <span class="fs-4">About the App</span>
                 </a>
                 </header>
-
+                </Row>
                 <div class="p-5 mb-4 bg-light rounded-3">
                     
                 <div class="container-fluid py-5">

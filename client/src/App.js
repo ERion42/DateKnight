@@ -48,8 +48,7 @@ function App() {
             <Route exact path="/login" component={LoginForm} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/event" component={Event} />
-           
-
+            <Route exact path="/about" component={AboutPage} />
             <SiteContainer />
           </Switch>
 

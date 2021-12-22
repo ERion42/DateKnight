@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 import Go from './images/Go-out.jpg';
 import Stay from './images/stay-in.jpg';
 import Events from './images/event.jpg';
-import Event from '../components/eventDate';
+// import Event from '../components/eventDate';
 import './Profile.css';
 import history from '../utils/history';
 
