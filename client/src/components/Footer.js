@@ -9,7 +9,7 @@ const Footer = () => {
         //     </Container>
         // </Navbar>
 
-        <nav className="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+        <nav className="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark mt-5">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
                    
