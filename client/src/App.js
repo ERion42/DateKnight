@@ -9,7 +9,7 @@ import SignUpForm from './components/SignUpForm'
 import Profile from './Pages/Profile';
 import Event from './components/eventDate';
 // import Dashboard from './Pages/Dashboard';
-import Dashboard2 from './Pages/Dashboard2';
+import Dashboard from './Pages/Dashboard2';
 import Footer from './components/Footer';
 // import Landing from './Pages/Landing';
 import SiteContainer from './Pages/siteContainer';
@@ -48,8 +48,7 @@ function App() {
             <Route exact path="/login" component={LoginForm} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/event" component={Event} />
-           
-
+            <Route exact path="/about" component={AboutPage} />
             <SiteContainer />
           </Switch>
 

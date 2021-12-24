@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Button, Alert, Row, Container } from 'react-bootstrap';
+import { Form, Button, Alert, Row } from 'react-bootstrap';
 
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
@@ -58,11 +58,9 @@ const LoginForm = () => {
     };
 
     return (
-        <>
-            <Container>
                 <Row>
-
-                    <div className="col-md-9 m-0 p-5">
+                    <div className='col-md-1'></div>
+                    <div className="col-md-6 ms-5 p-5">
                         <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
                             <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant="danger">
                                 Something went wrong with your login.
@@ -87,13 +85,9 @@ const LoginForm = () => {
                             <Button disabled={!(userFormData.email && userFormData.password)} type="submit" variant="primary">Submit!</Button>
                         </Form>
                     </div>
-                    <div className='col-md-3 m-0 p-5'>
-                        <img src= {Wizard} className='justify-content-center' alt='Knight Wizard' />
-                    </div>
+                    <img src= {Wizard} className='justify-content-center col-md-4 m-0 p-5' alt='Knight Wizard' />
 
                 </Row>
-            </Container>
-        </>
     );
 };
 

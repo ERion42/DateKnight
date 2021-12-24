@@ -26,6 +26,7 @@
     "concurrently": "^6.5.1",
     "history": "^4.10.1",
     "react-bootstrap": "^2.0.0-rc.1",
-    "react-bootstrap-v5": "^1.4.0"
+    "react-bootstrap-v5": "^1.4.0",
+    "react-svg": "^14.1.5"
   }
 }
