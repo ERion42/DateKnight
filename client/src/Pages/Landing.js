@@ -6,7 +6,7 @@ function Landing() {
 
         <div>
 
-            <div className="container col-xxl-8 px-4 py-5">
+            <div className="container-sm col-xxl-8 px-4 py-5">
                 <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div className="col-10 col-sm-12 col-lg-6">
                         <img src={Logo} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />

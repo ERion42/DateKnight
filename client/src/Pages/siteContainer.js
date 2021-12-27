@@ -22,9 +22,9 @@ export default function SiteContainer() {
     return (
         <main>
             
-            <div className="container">
+            {/* <div className="container-lg"> */}
                 {renderPage()}
-            </div>
+            {/* </div> */}
         </main>
     )
 
