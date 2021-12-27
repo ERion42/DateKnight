@@ -1,23 +1,33 @@
 // NOT FULLY RESPONSIVE ON SMALLER SCREENS - issues around 575px
 // The clock icons don't seem to be uniform either
 import React from "react";
-import { Col, Row, Container, Card, Button } from "react-bootstrap";
+import { Col, Row, Container, Card, Button, Navbar, Nav } from "react-bootstrap";
 import AboutPic from "./images/shadowCouple.png";
 import BlankPic from './images/gradientSquare.png';
 
 const AboutPage = () => {
     return (
        <>
+        <Navbar sticky="top" bg="primary" variant="dark"  className="text-right">
+            <Container>
+                <h4 className="text-white pe-5">About the...</h4>
+                <Nav className="me-auto">
+                    <Nav.Link href="#project">Project</Nav.Link>
+                    <Nav.Link href="#features">Features</Nav.Link>
+                    <Nav.Link href="#developers">Developers</Nav.Link>
+                </Nav>
+            </Container>
+        </Navbar>
 
-            <div className="px-4 pt-5 my-5 text-center border-bottom">
+            <div id="project" className="px-4 pt-5 my-5 text-center border-bottom">
                     <h1 className="display-4 fw-bold">About This Project</h1>
                     <div className="col-lg-6 mx-auto">
                         <p className="lead mb-4">This application is the culmination of two different projects developed for a fullstack web developer boot-camp. Both apps were developed within 1 week with a team of 3-4 coders. The first app designed a date based on user-input and geolocation while the second app located sporting, musical, or other events and helped the user book a ticket. After the boot-camp was over, several of the developers from the program got back together to work on them and improve them.</p>
                     </div>  
                     <img src={AboutPic} className="img-fluid border rounded-3 shadow-lg mb-4 align-content-center" alt="Example" loading="lazy"></img>
             </div>        
-
-            <h2 className="text-center">Features</h2>
+            
+            <h2 id="features" className="text-center display-4 pt-5 fw-bold">Features</h2>
 
             <div className="container px-4 mb-5 border-bottom" id="icon-grid">
                 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 py-5">
@@ -104,9 +114,9 @@ const AboutPage = () => {
 
 
             <div className="px-4 my-5 text-center border-bottom ms-5 ps-5">
-                    <h1 className="display-4 fw-bold pb-5">About The Developers</h1>
+                    <h1 id="developers" className="display-4 fw-bold pb-5">About The Developers</h1>
 
-                    <Container fluid>
+                    <Container fluid className="ms-5 ps-5">
                         <Row>
                             <Col>
                                 <Card style={{ width: '18rem' }}>
