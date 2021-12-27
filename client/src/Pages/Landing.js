@@ -8,15 +8,28 @@ function Landing() {
 
             <div className="container col-xxl-8 px-4 py-5">
                 <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div className="col-10 col-sm-8 col-lg-6">
-                    <img src={Logo} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+                    <div className="col-10 col-sm-12 col-lg-6">
+                        <img src={Logo} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
                     </div>
                     <div className="col-lg-6">
-                    <h1 className="display-5 fw-bold lh-1 mb-3">Are You Ready For a Really Great Time?</h1>
-                    <p className="lead">Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Do you have any idea how long it takes those cups to decompose. I gave it a cold? I gave it a virus. A computer virus. So you two dig up, dig up dinosaurs? You really think you can fly that thing?</p>
+                    <h1 className="display-5 fw-bold lh-1 mb-3">date</h1>
+                    <p className="lead">/dāt/</p>
+                    <p className="lead"><em>noun</em></p>
+                    <p className="lead"><strike>1. the day of the month or year as specified by a number.</strike></p>
+                    <p className="lead">2. a <strong>social</strong> or <strong>romantic</strong> appointment or engagement.</p>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                     </div>
                     </div>
+                </div>
+            </div>
+            <div className="container col-xxl-8 px-4 pb-5">
+                <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <p className="lead text-center">
+                        Dates can be difficult. Whether it's with that special someone, a group of friends, or just some "you time", you want to make sure your evening goes off without a hitch, right? Well, that's where we come in.
+                    </p>
+                    <p className="lead text-center">
+                        We'll help you plan the perfect date, be it social, romantic, or solo! We'll ask you a few questions about your preferences in order to build a profile then generate a fun date for you based on that profile! Then you can enjoy a fun little date without the hassle of planning it and if it goes wrong you can always blame the app!
+                    </p>
                 </div>
             </div>
 
