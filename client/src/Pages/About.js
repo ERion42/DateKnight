@@ -129,14 +129,14 @@ const AboutPage = () => {
             </div>
 
 
-            <div className="px-4 pt-5 my-5 text-center border-bottom">
-                    <h1 className="display-4 fw-bold">About The Developers</h1>
+            <div className="px-4 my-5 text-center border-bottom ms-5 ps-5">
+                    <h1 className="display-4 fw-bold pb-5">About The Developers</h1>
 
-                    <Container>
+                    <Container fluid>
                         <Row>
-                            <Col >
+                            <Col>
                                 <Card style={{ width: '18rem' }}>
-                                    <Card.Img variant="top" src={BlankPic} />
+                                    <Card.Img variant="top" src={BlankPic} height="285px" width="285px" />
                                     <Card.Body>
                                         <Card.Title>Eric</Card.Title>
                                         <Card.Text>
@@ -146,8 +146,9 @@ const AboutPage = () => {
                                     </Card.Body>
                                 </Card>                            
                             </Col>
+                            <Col>
                                 <Card style={{ width: '18rem' }}>
-                                    <Card.Img variant="top" src={BlankPic} />
+                                    <Card.Img variant="top" src={BlankPic} height="285px" width="285px" />
                                     <Card.Body>
                                         <Card.Title>James</Card.Title>
                                         <Card.Text>
@@ -156,9 +157,10 @@ const AboutPage = () => {
                                         <Button variant="primary">Portfolio</Button>
                                     </Card.Body>
                                 </Card>                
+                            </Col>
                             <Col>
                                 <Card style={{ width: '18rem' }}>
-                                    <Card.Img variant="top" src={BlankPic} />
+                                    <Card.Img variant="top" src={BlankPic} height="285px" width="285px" />
                                     <Card.Body>
                                         <Card.Title>Josh</Card.Title>
                                         <Card.Text>
@@ -168,7 +170,18 @@ const AboutPage = () => {
                                     </Card.Body>
                                 </Card>                                            
                             </Col>
-
+                            <Col>
+                                <Card style={{ width: '18rem' }}>
+                                    <Card.Img variant="top" src={BlankPic} height="285px" width="285px" />
+                                    <Card.Body>
+                                        <Card.Title>Patrick</Card.Title>
+                                        <Card.Text>
+                                        God help us, we're in the hands of engineers.
+                                        </Card.Text>
+                                        <Button variant="primary">Portfolio</Button>
+                                    </Card.Body>
+                                </Card>                                            
+                            </Col>
                         </Row>
 
                     </Container>
