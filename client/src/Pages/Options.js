@@ -10,12 +10,14 @@ import './datepicker.scss';
 import './variables.scss';
 import CheckboxContainer from "../components/CheckboxContainer";
 import RadioButton from "../components/RadioButton";
+import './Options.css';
 
 
 const Options = () => {
     const [startDate, setStartDate] = useState(new Date());
 
   return (
+      <div>
       <div className="container">
     <DatePicker
       selected={startDate}
@@ -26,12 +28,14 @@ const Options = () => {
       timeCaption="time"
       dateFormat="MMMM d, yyyy h:mm aa"
     />
+    </div>
 
     <CheckboxContainer />
     <div className="Radio">
     <RadioButton />
     </div>
     </div>
+
   );
       
   };

@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import checkboxes from './checkboxes';
 import Checkbox from './Checkbox';
+import './Checkbox.css';
 
 class CheckboxContainer extends React.Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class CheckboxContainer extends React.Component {
       <React.Fragment>
         {
           checkboxes.map(item => (
-            <label key={item.key}>
+            <label className='css' key={item.key}>
               {item.name}
               <Checkbox name={item.name} checked={this.state.checkedItems.get(item.name)} onChange={this.handleChange} />
             </label>
