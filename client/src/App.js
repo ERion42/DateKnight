@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm'
 import Profile from './Pages/Profile';
+import Options from './Pages/Options';
 import Event from './components/eventDate';
 // import Dashboard from './Pages/Dashboard';
 import Dashboard from './Pages/Dashboard2';
@@ -43,11 +44,12 @@ function App() {
           <NavBar />
           <Switch>
           {/* <Route path="/event" exact> <Event /> </Route> */}
-            <Route exact path='/dashboard' component={Dashboard} />
+            <Route exact path='/dashboard' component={Dashboard2} />
             <Route exact path="/signup" component={SignUpForm} />
             <Route exact path="/login" component={LoginForm} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/event" component={Event} />
+            <Route exact path="/options" component={Options} />
             <Route exact path="/about" component={AboutPage} />
             <SiteContainer />
           </Switch>
