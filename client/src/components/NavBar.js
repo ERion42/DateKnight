@@ -9,15 +9,15 @@ const NavBar = () => {
         if (Auth.loggedIn()) {
             return (
 
-                <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <header className="d-flex flex-wrap justify-content-center py-3 border-bottom">
                     {/* Clicking this should take the user home */}
                     <Link to= "/dashboard" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                         <svg className="bi me-2" width="40" height="32"></svg>
                         {/* Placeholder image - I'll commission a real legit logo when we can agree on one */}
                         <img src= {KnightLogo} alt="logo"></img>
-                        <span className="fs-4">Date Knight</span>
+                        <span className="fs-4">Home</span>
                     </Link>
-
+                    <span className='fs-2 d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark'>DATE KNIGHT</span>
                     <ul className="nav nav-pills">
                        <li className="nav-item">
                             <Link to="/dashboard" className='nav-link'>
@@ -42,15 +42,16 @@ const NavBar = () => {
             )
         } else {
             return (
-                <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <header className="d-flex flex-wrap justify-content-center py-3 border-bottom">
                     {/* Clicking this should take the user home */}
+            
                     <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                    <svg className="bi me-2" width="40" height="32"></svg>
-                    {/* Placeholder image - I'll commission a real legit logo when we can agree on one */}
-                    <img src= {KnightLogo} alt="logo"></img>
-                    <span className="fs-4">Date Knight</span>
+                        <svg className="bi me-2" width="40" height="32"></svg>
+                        {/* Placeholder image - I'll commission a real legit logo when we can agree on one */}
+                        <img src= {KnightLogo} alt="logo"></img>
+                        <span className="fs-4">Home</span>
                     </a>
-
+                    <span className='fs-2 d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark'>DATE KNIGHT</span>
                     <ul className="nav nav-pills">
                         <li className='nav-item'>
                             <Link to="/about" className='nav-link'>
