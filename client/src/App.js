@@ -44,7 +44,7 @@ function App() {
           <NavBar />
           <Switch>
           {/* <Route path="/event" exact> <Event /> </Route> */}
-            <Route exact path='/dashboard' component={Dashboard2} />
+            <Route exact path='/dashboard' component={Dashboard} />
             <Route exact path="/signup" component={SignUpForm} />
             <Route exact path="/login" component={LoginForm} />
             <Route exact path="/profile" component={Profile} />
