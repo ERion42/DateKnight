@@ -15,9 +15,11 @@ const NavBar = () => {
                         <svg className="bi me-2" width="40" height="32"></svg>
                         {/* Placeholder image - I'll commission a real legit logo when we can agree on one */}
                         <img src= {KnightLogo} alt="logo"></img>
-                        <span className="fs-4">Home</span>
+                        <span className="fs-4 ms-3">Date Knight</span>
                     </Link>
-                    <span className='fs-2 d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark'>DATE KNIGHT</span>
+                    
+                    <span className='fs-2 ps-5 ms-3 d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark font-weight-bold'>DATE KNIGHT</span>
+                    
                     <ul className="nav nav-pills">
                        <li className="nav-item">
                             <Link to="/dashboard" className='nav-link'>

@@ -1,9 +1,12 @@
-
-
 // import React, { useState, useEffect, useRef } from 'react';
 import React from 'react';
 // import { Form, Button } from 'react-bootstrap';
-import CitySearchForm from '../components/CitySearch';
+
+// Temporarily removed
+// import CitySearchForm from '../components/CitySearch';
+// import Options from '../Pages/Options';
+import DateStart from './DateStart';
+
 // import showError from '../utils/helpers'
 // import { Loader } from "@googlemaps/js-api-loader"
 // import { withScriptjs, withGoogleMaps, GoogleMap, Marker, google } from 'react-google-maps'
@@ -18,10 +21,13 @@ import CitySearchForm from '../components/CitySearch';
 const Dashboard = () => {
 
     return (
-        <div>
-            <CitySearchForm />
+    
+        <div className='container'>
+            {/* <CitySearchForm /> */}
+            {/* <Options /> */}
+            <DateStart />
         </div>
-
+    
     )
 }
 
